@@ -1,4 +1,4 @@
-Edge detection and uncertainty calculation for operators like Sobel, roberts cross, prewitt and finally implementing Canny algorithm from scratch to compare accuarcy in detecting edges between different operators.
+Edge detection and uncertainty calculation for operators like Sobel, roberts cross, prewitt and finally implementing Canny algorithm from scratch to compare accuracy in detecting edges between different operators.
 
 Example 1:- Using a brick wall image
 ![image](https://github.com/user-attachments/assets/2ffde8fb-735f-4c2a-9e37-2ee7970e4f1b)
