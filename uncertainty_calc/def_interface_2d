@@ -1,0 +1,37 @@
+import numpy as np
+import cmath
+import matplotlib.pyplot as plt
+from PIL import Image
+#theta=np.linspace(-2*np.pi,2*np.pi,200)
+#x=np.cos(theta)
+#y=np.sin(theta)
+
+
+
+
+# contour circle
+x= np.linspace(-1,1,200)
+y = np.linspace(-1.0, 1.0, 200)
+X, Y = np.meshgrid(x,y)
+F = X**2 + Y**2 -1
+#plt.plot(X,F)
+#plt.show()
+#plt.contour(X,Y,F,[0])
+#plt.show()
+F=(F-F.min())/(F.max()-F.min())
+F = (F*255).astype(np.uint8)
+img = Image.fromarray(F).convert('L')
+grad_h=np.zeros((200,199))
+grad_v=np.zeros((199,200))
+#img.show()
+img.save('trial_2d.png')
+
+#calculating gradient of image
+for i in range(200):
+    for j in range(199):
+        grad_h[i,j]=F[i,j+1]-F[i,j]
+for j in range(200):
+    for i in range(199):
+        grad_v[i,j]=F[i+1,j]-F[i,j]
+plt.plot(grad_v[:,0])
+plt.show()
