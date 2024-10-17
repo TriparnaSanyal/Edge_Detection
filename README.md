@@ -7,7 +7,7 @@ Example 1:- Using a brick wall image
 
 
 
-![image](https://github.com/user-attachments/assets/7b6c11f9-47e5-43c4-88a5-42dfad87ec41)
+
 
 
 
